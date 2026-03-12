@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Đặt Hàng Trực Tuyến</title>
+    <link rel="stylesheet" href="bai2.2_TH04.css">
+</head>
+<body>
+
+    <div class="container">
+        <form id="orderForm">
+            <h2>ĐƠN ĐẶT HÀNG</h2>
+
+            <div class="form-control">
+                <label>Sản phẩm</label>
+                <select id="product">
+                    <option value="">-- Chọn sản phẩm --</option>
+                    <option value="Laptop">Laptop (20.000.000đ)</option>
+                    <option value="Iphone">Iphone 15 (25.000.000đ)</option>
+                    <option value="iPad">iPad Air (15.000.000đ)</option>
+                </select>
+                <small class="error-msg"></small>
+            </div>
+
+            <div class="form-row">
+                <div class="form-control">
+                    <label>Số lượng (1-99)</label>
+                    <input type="number" id="quantity" value="1">
+                    <small class="error-msg"></small>
+                </div>
+                <div class="total-display">
+                    Tổng tiền: <span id="totalPrice">0đ</span>
+                </div>
+            </div>
+
+            <div class="form-control">
+                <label>Ngày giao hàng</label>
+                <input type="date" id="deliveryDate">
+                <small class="error-msg"></small>
+            </div>
+
+            <div class="form-control">
+                <label>Địa chỉ giao hàng</label>
+                <input type="text" id="address" placeholder="Nhập địa chỉ chi tiết (ít nhất 10 ký tự)">
+                <small class="error-msg"></small>
+            </div>
+
+            <div class="form-control">
+                <label>Ghi chú (Không quá 200 ký tự)</label>
+                <textarea id="note" rows="3"></textarea>
+                <div id="charCount" class="char-count">0/200</div>
+                <small class="error-msg"></small>
+            </div>
+
+            <div class="form-control">
+                <label>Phương thức thanh toán</label>
+                <div class="radio-group">
+                    <input type="radio" name="payment" value="COD"> COD
+                    <input type="radio" name="payment" value="Chuyển khoản"> Chuyển khoản
+                    <input type="radio" name="payment" value="Ví điện tử"> Ví điện tử
+                </div>
+                <small class="error-msg" id="paymentError"></small>
+            </div>
+
+            <button type="submit" id="btnSubmit">TIẾP TỤC</button>
+        </form>
+
+        <div id="confirmBox" class="hidden overlay">
+            <div class="modal">
+                <h3>Xác nhận đơn hàng</h3>
+                <div id="summaryContent"></div>
+                <div class="modal-buttons">
+                    <button id="btnFinalConfirm" class="btn-success">Xác nhận</button>
+                    <button id="btnCancel" class="btn-danger">Hủy</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="finalSuccess" class="hidden success-final">
+            <h2>Đặt hàng thành công! 🎉</h2>
+            <button onclick="location.reload()">Về trang chủ</button>
+        </div>
+    </div>
+
+    <script src="bai2.2_TH04.js"></script>
+</body>
+</html>
