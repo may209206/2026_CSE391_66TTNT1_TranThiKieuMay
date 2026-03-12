@@ -1,0 +1,66 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.container {
+    background: white;
+    width: 500px;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+h2 { text-align: center; color: #1a73e8; margin-bottom: 30px; }
+
+.form-control { margin-bottom: 20px; position: relative; }
+
+.form-control label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.form-control input[type="text"],
+.form-control input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+/* Khi có lỗi thì viền đỏ */
+.form-control.error input { border-color: #e74c3c; }
+
+.error-msg {
+    color: #e74c3c;
+    font-size: 13px;
+    margin-top: 5px;
+    display: block;
+    min-height: 15px;
+}
+
+.radio-group, .checkbox-group { font-size: 16px; }
+
+#btnSubmit {
+    width: 100%;
+    padding: 15px;
+    background: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#btnSubmit:hover { background: #1557b0; }
+
+.hidden { display: none; text-align: center; }
