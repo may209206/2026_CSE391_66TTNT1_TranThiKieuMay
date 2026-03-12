@@ -1,0 +1,106 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    padding: 40px;
+    background-color: #f0f2f5;
+}
+
+h2 {
+    text-align: center;
+    font-size: 35px;
+    color: #1a73e8;
+}
+
+/* Form nhập liệu to */
+.input-section {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.input-section input {
+    padding: 15px;
+    font-size: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    width: 350px;
+}
+
+#btnAdd {
+    padding: 15px 40px;
+    font-size: 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Thanh công cụ tìm kiếm */
+.filter-section {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.filter-section input, .filter-section select {
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    flex: 1;
+}
+
+/* Bảng hiển thị rộng rãi */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    font-size: 19px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+th, td {
+    border: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+}
+
+th {
+    background-color: #343a40;
+    color: white;
+}
+
+.sortable:hover {
+    background-color: #495057;
+    cursor: pointer;
+}
+
+/* Hàng điểm < 5 */
+.bg-yellow {
+    background-color: #fff9c4 !important;
+}
+
+.btn-delete {
+    padding: 8px 15px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.summary {
+    margin-top: 25px;
+    padding: 20px;
+    background: #e9ecef;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px;
+}
